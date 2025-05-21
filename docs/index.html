@@ -1,0 +1,19 @@
+输入单词:<input id="y">
+<button onclick="A()">美</button>
+<button onclick="B()">英</button>
+<script>
+function A(){
+ let a1=document.getElementById("y").value;
+ const msg = new SpeechSynthesisUtterance();
+ msg.text = a1; 
+ msg.lang = "en-US";
+ window.speechSynthesis.speak(msg);
+}
+function B(){
+ let a1=document.getElementById("y").value;
+ const msg = new SpeechSynthesisUtterance();
+ msg.text = a1; 
+ msg.lang = "en-GB";
+ window.speechSynthesis.speak(msg);
+}
+</script>
